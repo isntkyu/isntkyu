@@ -22,11 +22,11 @@
 ### 📕 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
+- [[프로그래머스]level-2 next_permutation 를 사용한 단체 사진찍기](https://velog.io/@isntkyu/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Level-2-nextpermutation-%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B2%B4-%EC%82%AC%EC%A7%84%EC%B0%8D%EA%B8%B0)
 - [[javascript] 호이스팅&lpar;hoisting&rpar; 과 console.log 디버깅](https://velog.io/@isntkyu/javascript-%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85hoisting-%EA%B3%BC-console.log-%EB%94%94%EB%B2%84%EA%B9%85)
 - [[NestJS] nestjs/cli 오류와 모듈 생성 명령어](https://velog.io/@isntkyu/NestJS)
 - [[프로그래머스]level-3 순위 &lpar;플로이드 와샬 알고리즘&rpar;](https://velog.io/@isntkyu/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4level-3-%EC%88%9C%EC%9C%84-%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%99%80%EC%83%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 - [[프로그래머스]level-3 섬 연결하기&lpar;크루스칼 알고리즘&rpar;](https://velog.io/@isntkyu/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4level-3-%EC%84%AC-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0%ED%81%AC%EB%A3%A8%EC%8A%A4%EC%B9%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
-- [[NestJS] Nest 시작함](https://velog.io/@isntkyu/NestJS-Nest-%EC%8B%9C%EC%9E%91%ED%95%A8)
 <!-- BLOG-POST-LIST:END -->
 
 ➡️ [more blog posts...](https://velog.io/@isntkyu)
