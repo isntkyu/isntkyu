@@ -22,7 +22,7 @@
 ### 📕 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-- [mac-os MongoDB 설치 및 CRUD 실행](https://velog.io/@isntkyu/mac-os-MongoDB-%EC%84%A4%EC%B9%98-%EB%B0%8F-CRUD-%EC%8B%A4%ED%96%89)
+- [mac-os MongoDB 설치 및 CRUD 실행 &lpar;1&rpar;](https://velog.io/@isntkyu/mac-os-MongoDB-%EC%84%A4%EC%B9%98-%EB%B0%8F-CRUD-%EC%8B%A4%ED%96%89)
 - [[프로그래머스]level-2 메뉴 리뉴얼 &lpar;DFS로 조합 구하기&rpar;](https://velog.io/@isntkyu/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4level-2-%EB%A9%94%EB%89%B4-%EB%A6%AC%EB%89%B4%EC%96%BC-DFS%EB%A1%9C-%EC%A1%B0%ED%95%A9-%EA%B5%AC%ED%95%98%EA%B8%B0)
 - [[프로그래머스]level-2 next_permutation 를 사용한 단체 사진찍기](https://velog.io/@isntkyu/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Level-2-nextpermutation-%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-%EB%8B%A8%EC%B2%B4-%EC%82%AC%EC%A7%84%EC%B0%8D%EA%B8%B0)
 - [[javascript] 호이스팅&lpar;hoisting&rpar; 과 console.log 디버깅](https://velog.io/@isntkyu/javascript-%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85hoisting-%EA%B3%BC-console.log-%EB%94%94%EB%B2%84%EA%B9%85)
