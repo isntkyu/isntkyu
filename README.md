@@ -22,11 +22,11 @@
 ### 📕 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
+- [JAVASCRIPT Promise](https://velog.io/@isntkyu/JAVASCRIPT-Promise)
 - [JAVASCRIPT 비동기 코드 작성 규칙](https://velog.io/@isntkyu/JAVASCRIPT-%EB%B9%84%EB%8F%99%EA%B8%B0-%EC%BD%94%EB%93%9C-%EC%9E%91%EC%84%B1-%EA%B7%9C%EC%B9%99)
 - [[Nodejs] mysql vs mysql2 , Connection Pool](https://velog.io/@isntkyu/Nodejs-mysql-vs-mysql2-Connection-Pool)
 - [JAVASCRIPT  클로져](https://velog.io/@isntkyu/JAVASCRIPT-%ED%81%B4%EB%A1%9C%EC%A0%B8)
 - [mac-os MongoDB 설치 및 CRUD 실행 &lpar;1&rpar;](https://velog.io/@isntkyu/mac-os-MongoDB-%EC%84%A4%EC%B9%98-%EB%B0%8F-CRUD-%EC%8B%A4%ED%96%89)
-- [[프로그래머스]level-2 메뉴 리뉴얼 &lpar;DFS로 조합 구하기&rpar;](https://velog.io/@isntkyu/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4level-2-%EB%A9%94%EB%89%B4-%EB%A6%AC%EB%89%B4%EC%96%BC-DFS%EB%A1%9C-%EC%A1%B0%ED%95%A9-%EA%B5%AC%ED%95%98%EA%B8%B0)
 <!-- BLOG-POST-LIST:END -->
 
 ➡️ [more blog posts...](https://velog.io/@isntkyu)
