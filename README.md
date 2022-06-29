@@ -38,6 +38,7 @@
 #### CleanCode.
 
 - [클린코드 자바스크립트](https://www.udemy.com/share/105zfE3@ksI6nVUsto7E9l8zzSofqpE0vrb4RXPEk_1K5qdambY0DWKMvLBOALnYoPdo4LwN3w==/)
+- 노마드코더 타입스크립트 챌린지 1기
 - [YouTube Advanced Javascript](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6N3bG4YZhkrCL3ZmDcLTuGd)
 - [https://nomadcoders.co/typescript-for-beginners](https://nomadcoders.co/typescript-for-beginners)
 - [타입스크립트 입문](https://www.udemy.com/share/106xlY3@-3rq1UAtTxy71-ZADPpmUQ9CRRELWKIWWTPFl11eeqnL6Qa0Z3w8ddXQsv7EOw7dGA==/)
