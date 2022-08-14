@@ -42,9 +42,11 @@
 - [타입스크립트로 블록체인만들기](https://nomadcoders.co/typescript-for-beginners)
 - [타입스크립트 입문](https://www.udemy.com/share/106xlY3@-3rq1UAtTxy71-ZADPpmUQ9CRRELWKIWWTPFl11eeqnL6Qa0Z3w8ddXQsv7EOw7dGA==/)
 - TDD) [따라하며-배우는-tdd](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%A9%B0-%EB%B0%B0%EC%9A%B0%EB%8A%94-tdd/dashboard)
+- [[리뉴얼] 타입스크립트 올인원](https://www.inflearn.com/course/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%98%AC%EC%9D%B8%EC%9B%90-1)
 - 책)  [****『프로그래밍 언어 속 타입』(가제)****](https://blog.hjaem.info/2)
 - 책) HTTP 완벽 가이드
 - 책) 헤드 퍼스트 디자인 패턴
+- 책) 'Node.js 디자인 패턴 바이블
 
 #### Framework.
 
