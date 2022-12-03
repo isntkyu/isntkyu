@@ -1,6 +1,7 @@
 
 
-<img align="left" alt="Node.js" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" style="padding-right:10px;" />
+
+<img align="left" alt="Node.js" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" style="padding-right:10px;" /><img align="left" alt="Node.js" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg" style="padding-right:10px;" />
 
 <br />
 <br />
@@ -23,6 +24,7 @@
 - 헤드 퍼스트 디자인 패턴 -에릭 프리먼, 엘리자베스 롭슨
 - ~~Node.js 디자인 패턴 바이블 -Mario Casciaro, Luciano Mammino~~
 - 스프링 부트와 AWS로 혼자 구현하는 웹 서비스 -이동욱
+- NestJS로 배우는 백엔드 프로그래밍 - 
 
 #### Lecture :pray:
 
