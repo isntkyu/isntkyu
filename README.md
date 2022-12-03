@@ -7,6 +7,8 @@
 
 #### Book 📕
 
+2022~2023 goal
+
 - 도메인 주도 설계 철저 입문 -나루세 마사노부
 - 단위 테스트 -블라디미르 코리코프
 - ~~테스트 주도 개발 시작하기 -최범균~~
@@ -23,7 +25,9 @@
 - ~~스프링 부트와 AWS로 혼자 구현하는 웹 서비스 -이동욱~~
 - NestJS로 배우는 백엔드 프로그래밍 - 한용재
 
-#### Lecture :pray:
+#### Lecture :pray: 
+
+2022 goal
 
 - [[리뉴얼] 타입스크립트 올인원](https://www.inflearn.com/course/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%98%AC%EC%9D%B8%EC%9B%90-1)
 - ~~[클린코드 자바스크립트](https://www.udemy.com/share/105zfE3@ksI6nVUsto7E9l8zzSofqpE0vrb4RXPEk_1K5qdambY0DWKMvLBOALnYoPdo4LwN3w==/)~~
