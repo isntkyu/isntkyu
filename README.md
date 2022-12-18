@@ -29,7 +29,7 @@
 
 2022 goal
 
-- [[리뉴얼] 타입스크립트 올인원](https://www.inflearn.com/course/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%98%AC%EC%9D%B8%EC%9B%90-1)
+- ~~[[리뉴얼] 타입스크립트 올인원](https://www.inflearn.com/course/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%98%AC%EC%9D%B8%EC%9B%90-1)~~
 - ~~[클린코드 자바스크립트](https://www.udemy.com/share/105zfE3@ksI6nVUsto7E9l8zzSofqpE0vrb4RXPEk_1K5qdambY0DWKMvLBOALnYoPdo4LwN3w==/)~~
 - ~~[탄탄한-백엔드-Nestjs](https://www.inflearn.com/course/%ED%83%84%ED%83%84%ED%95%9C-%EB%B0%B1%EC%97%94%EB%93%9C-%EB%84%A4%EC%8A%A4%ED%8A%B8/dashboard)~~
 - ~~[따라하며-배우는-tdd](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%A9%B0-%EB%B0%B0%EC%9A%B0%EB%8A%94-tdd/dashboard)~~
