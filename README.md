@@ -44,3 +44,10 @@
 <!-- - [AWS SAA](https://www.udemy.com/course/best-aws-certified-solutions-architect-associate/)
 - [AWS DA](https://www.udemy.com/course/best-aws-certified-developer-associate/) -->
 <!-- - [타입스크립트 입문](https://www.udemy.com/share/106xlY3@-3rq1UAtTxy71-ZADPpmUQ9CRRELWKIWWTPFl11eeqnL6Qa0Z3w8ddXQsv7EOw7dGA==/) -->
+
+---
+
+### Latest Blog Posts 
+
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
