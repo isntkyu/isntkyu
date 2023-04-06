@@ -14,3 +14,10 @@
 - [테스트 주도 개발 시작하기 - 최범균](https://velog.io/@isntkyu/%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A3%BC%EB%8F%84-%EA%B0%9C%EB%B0%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-%EC%B5%9C%EB%B2%94%EA%B7%A0-%EB%8F%85%ED%9B%84%EA%B0%90)
 - [[TypeORM] save 와 upsert &lpar;bulk insert&rpar;](https://velog.io/@isntkyu/TypeORM-save-%EC%99%80-upsert-bulk-insert)
 <!-- BLOG-POST-LIST:END -->
+
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=isntkyu&layout=compact)](https://github.com/isntkyu)
+  
+   
+   
+[![yourrepositoryname](https://github-readme-stats.vercel.app/api/pin/?username=isntkyu&repo=velog-total)](https://github.com/isntkyu/velog-total)
