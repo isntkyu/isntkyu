@@ -15,9 +15,12 @@
 - [[TypeORM] save 와 upsert &lpar;bulk insert&rpar;](https://velog.io/@isntkyu/TypeORM-save-%EC%99%80-upsert-bulk-insert)
 <!-- BLOG-POST-LIST:END -->
 
+➡️ [more blog posts...](https://velog.io/@isntkyu)
+
+---
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=isntkyu&layout=compact)](https://github.com/isntkyu)
   
-   
+---
    
 [![yourrepositoryname](https://github-readme-stats.vercel.app/api/pin/?username=isntkyu&repo=velog-total)](https://github.com/isntkyu/velog-total)
