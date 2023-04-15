@@ -23,4 +23,4 @@
   
 ---
    
-[![yourrepositoryname](https://github-readme-stats.vercel.app/api/pin/?username=isntkyu&repo=velog-total)](https://github.com/isntkyu/velog-total)
+<!-- [![yourrepositoryname](https://github-readme-stats.vercel.app/api/pin/?username=isntkyu&repo=velog-total)](https://github.com/isntkyu/velog-total) -->
