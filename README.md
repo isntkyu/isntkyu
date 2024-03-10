@@ -1,4 +1,7 @@
-<img align="left" alt="Node.js" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" style="padding-right:10px;" /><img align="left" alt="Node.js" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg" style="padding-right:10px;" />
+<img align="left" alt="Node.js" width="50px" src="https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/nodejs_small.svg" style="padding-right:10px;" />  
+<img src="https://img.shields.io/badge/Nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white">
+
+
 
 <br />
 <br />
