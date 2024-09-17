@@ -2,7 +2,7 @@ name: Update README daily
 
 on:
   schedule:
-    - cron: "* * * * *" # 매일 자정에 실행 / 테스트용으로 1분
+    - cron: "0 0 * * *" # 매일 자정에 실행
 
 jobs:
   update-readme:
