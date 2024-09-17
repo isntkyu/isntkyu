@@ -1,0 +1,17 @@
+{
+  "name": "isntkyu",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "<img align=\"left\" alt=\"Node.js\" width=\"50px\" src=\"https://cdn.jsdelivr.net/npm/devicons@1.8.0/!SVG/nodejs_small.svg\" style=\"padding-right:10px;\" />   <img src=\"https://img.shields.io/badge/Nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
