@@ -13,15 +13,21 @@ export const getVelogCookie = async (loginType) => {
   await page.goto("https://velog.io");
   await page.waitForSelector(
     "div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 button"
-  );
+  ,{
+    timeout: 100000
+  });
 
   await page.click(
     "div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 button"
   );
-  await page.waitForSelector("a:nth-of-type(1) g > path");
+  await page.waitForSelector("a:nth-of-type(1) g > path", {
+    timeout: 100000
+  });
   await page.click("a:nth-of-type(1) g > path");
 
-  await page.waitForSelector("#login_field");
+  await page.waitForSelector("#login_field",{
+    timeout: 100000
+  });
   await page.type("#login_field", githubId);
   await page.type("#password", githubPw);
   await page.click("input[type='submit']");
@@ -31,7 +37,9 @@ export const getVelogCookie = async (loginType) => {
   });
   await page.waitForSelector(
     'xpath///*[@id="html"]/body/div/div[2]/div[2]/div/header/div/div[2]/div/div/img'
-  );
+  ,{
+      timeout: 100000
+  });
 
   const cookies = await page.cookies()
 
