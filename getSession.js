@@ -26,7 +26,9 @@ export const getVelogCookie = async (loginType) => {
   await page.type("#password", githubPw);
   await page.click("input[type='submit']");
 
-  await page.waitForNavigation();
+  await page.waitForNavigation({
+    timeout: 100000
+  });
   await page.waitForSelector(
     'xpath///*[@id="html"]/body/div/div[2]/div[2]/div/header/div/div[2]/div/div/img'
   );
