@@ -21,7 +21,10 @@ jobs:
         run: npm install
 
       - name: Run update script
-        run: node readme.js
+        env:
+            GITHUB_ID: ${{ secrets.GH_ID }}
+            GITHUB_PW: ${{ secrets.GH_PW }}
+        run: node update-velog-total.js
 
       - name: Commit and push changes
         run: |
