@@ -26,7 +26,8 @@ export const getVelogCookie = async (loginType) => {
     timeout: 100000,
     visible: true
   });
-  await page.click(".svgPath");
+  await page.evaluate(() => document.querySelector('.svgPath').click())
+  // await page.click(".svgPath");
 
   await page.waitForSelector("#login_field",{
     timeout: 100000,
