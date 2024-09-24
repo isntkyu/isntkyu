@@ -20,5 +20,5 @@ export const getTotalView = async (cookie) => {
     }
   })
 
-  return JSON.parse(response.body)
+  return JSON.parse(response.body).data
 }
