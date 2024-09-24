@@ -21,11 +21,10 @@ export const getVelogCookie = async (loginType) => {
   await page.click(
     "div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 button"
   );
-  const ex = await page.waitForSelector("xpath///svg//mask[@id='github']", {
-    timeout: 50000,
-    visible: true
-  });
-  await ex.click()
+
+  await page.waitForSelector('.AuthSocialButton_block__qieJf ')
+  await page.click('.my-class:first-of-type');
+
   // await page.wait
   // await page.evaluate(() => document.querySelector(".svgPath").click())
   // await page.click("body > div > div.Modal_backdrop__JxQ1v.keyframes_fadeIn__9Emp7 > div > div.AuthModal_white-block__SuoSm > div.AuthModal_block-content__3Dk7K > div > div.AuthForm_upper-warepper__r7h_t > section:nth-child(3) > div > a:nth-child(1) > svg")
