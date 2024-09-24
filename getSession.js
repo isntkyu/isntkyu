@@ -22,12 +22,12 @@ export const getVelogCookie = async (loginType) => {
   await page.click(
     "div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 button"
   );
-  await page.waitForSelector(".svgPath", {
+  await page.waitForSelector("#github", {
     timeout: 100000,
     visible: true
   });
-  await page.evaluate(() => document.querySelector('.svgPath').click())
-  // await page.click(".svgPath");
+  // await page.evaluate(() => document.querySelector(".svgPath").click())
+  await page.click("#github");
 
   await page.waitForSelector("#login_field",{
     timeout: 100000,
