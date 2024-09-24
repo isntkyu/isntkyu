@@ -23,7 +23,7 @@ export const getVelogCookie = async (loginType) => {
   );
 
   await page.waitForSelector('.AuthSocialButton_block__qieJf ')
-  await page.click('.my-class:first-of-type');
+  await page.click('.AuthSocialButton_block__qieJf :first-of-type');
 
   // await page.wait
   // await page.evaluate(() => document.querySelector(".svgPath").click())
