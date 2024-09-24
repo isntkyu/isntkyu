@@ -5,6 +5,7 @@ const githubPw = process.env.GITHUB_PW || ''
 
 export const getVelogCookie = async (loginType) => {
   const browser = await puppeteer.launch({
+    executablePath: '/usr/bin/chromium-browser',
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
     headless: true,
   });
