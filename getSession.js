@@ -48,12 +48,12 @@ export const getVelogCookie = async (loginType) => {
   await page.click("input[type='submit']");
 
   await page.waitForNavigation({
-    timeout: 50000
+    timeout: 100000
   });
   await page.waitForSelector(
-    'xpath///*[@id="html"]/body/div/div[2]/div[2]/div/header/div/div[2]/div/div/img'
+    '#root > div.sc-dPiLbb.sc-bBHHxi.kTIDXm > div.sc-TBWPX.dXONqK.sc-jQrDum.fiOuRZ > div > div.sc-GEbAx.eRBiqJ > button:nth-child(1)'
   ,{
-      timeout: 50000
+      timeout: 100000
   });
 
   const cookies = await page.cookies()
