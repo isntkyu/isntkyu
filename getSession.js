@@ -50,6 +50,8 @@ export const getVelogCookie = async (loginType) => {
   await page.waitForNavigation({
     timeout: 100000
   });
+  console.log(await page.url())
+  console.log(githubId)
   await page.waitForSelector(
     '#root > div.sc-dPiLbb.sc-bBHHxi.kTIDXm > div.sc-TBWPX.dXONqK.sc-jQrDum.fiOuRZ > div > div.sc-GEbAx.eRBiqJ > button:nth-child(1)'
   ,{
