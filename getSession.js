@@ -52,8 +52,9 @@ export const getVelogCookie = async (loginType) => {
   });
 
   await page.waitForSelector(
-    'body > div > div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 > div > header > div > div.Header_right__IaiY4 > a:nth-child(3) > button'
+    '.HeaderUserIcon_block__Q8xa9'
   ,{
+      visible: true,
       timeout: 100000
   });
 
