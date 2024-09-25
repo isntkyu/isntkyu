@@ -47,15 +47,16 @@ export const getVelogCookie = async (loginType) => {
   await page.type("#password", githubPw);
   await page.click("input[type='submit']");
 
-  // await page.waitForNavigation({
-  //   timeout: 100000
-  // });
+  await page.waitForNavigation({
+    timeout: 100000,
+    waitUntil: 'load'
+  });
 
-  await page.waitForSelector('body > div > div.BasicLayout_block__6bmSl > div.responsive_mainResponsive___uG64 > header > div > div.Header_right__IaiY4 > a:nth-child(3)',{
+  await page.waitForSelector('body > div > div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 > div > header > div > div.Header_right__IaiY4 > a:nth-child(3)',{
     timeout: 100000,
     visible: true
   })
-  const url2 = await page.$eval('body > div > div.BasicLayout_block__6bmSl > div.responsive_mainResponsive___uG64 > header > div > div.Header_right__IaiY4 > a:nth-child(3)', el => el.href);
+  const url2 = await page.$eval('body > div > div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 > div > header > div > div.Header_right__IaiY4 > a:nth-child(3)', el => el.href);
   await page.goto(url2);
 
   const cookies = await page.cookies()
