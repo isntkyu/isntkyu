@@ -52,6 +52,9 @@ export const getVelogCookie = async (loginType) => {
   });
 
 
+  await page.waitForSelector('body > div > div.BasicLayout_block__6bmSl > div.responsive_mainResponsive___uG64 > header > div > div.Header_right__IaiY4 > a:nth-child(3)',{
+    visible: true
+  })
   const url2 = await page.$eval('body > div > div.BasicLayout_block__6bmSl > div.responsive_mainResponsive___uG64 > header > div > div.Header_right__IaiY4 > a:nth-child(3)', el => el.href);
   await page.goto(url2);
 
