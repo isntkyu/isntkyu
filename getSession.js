@@ -51,12 +51,9 @@ export const getVelogCookie = async (loginType) => {
     timeout: 100000
   });
 
-  await page.waitForSelector(
-    '.HeaderUserIcon_block__Q8xa9'
-  ,{
-      visible: true,
-      timeout: 100000
-  });
+
+  const url2 = await page.$eval('body > div > div.BasicLayout_block__6bmSl > div.responsive_mainResponsive___uG64 > header > div > div.Header_right__IaiY4 > a:nth-child(3)', el => el.href);
+  await page.goto(url2);
 
   const cookies = await page.cookies()
 
