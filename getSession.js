@@ -52,11 +52,11 @@ export const getVelogCookie = async (loginType) => {
     waitUntil: 'load'
   });
 
-  await page.waitForSelector('body > div > div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 > div > header > div > div.Header_right__IaiY4 > a:nth-child(3)',{
+  await page.waitForSelector('body > div > div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 > div > header > div > div.Header_right__IaiY4 > a.Header_notification__cTNS6',{
     timeout: 100000,
     visible: true
   })
-  const url2 = await page.$eval('body > div > div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 > div > header > div > div.Header_right__IaiY4 > a:nth-child(3)', el => el.href);
+  const url2 = await page.$eval('body > div > div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 > div > header > div > div.Header_right__IaiY4 > a.Header_notification__cTNS6', el => el.href);
   await page.goto(url2);
 
   const cookies = await page.cookies()
