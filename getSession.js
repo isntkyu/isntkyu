@@ -21,7 +21,8 @@ export const getVelogCookie = async (loginType) => {
   await page.click(
     "div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 button"
   );
-
+  console.log(await page.viewport())
+  await page.setViewport({ width: 800, height: 600 })
   await page.waitForSelector('body > div > div.Modal_backdrop__JxQ1v.keyframes_fadeIn__9Emp7 > div > div.AuthModal_white-block__SuoSm > div.AuthModal_block-content__3Dk7K > div > div.AuthForm_upper-warepper__r7h_t > section:nth-child(3) > div > a:nth-child(1)')
   await page.click('body > div > div.Modal_backdrop__JxQ1v.keyframes_fadeIn__9Emp7 > div > div.AuthModal_white-block__SuoSm > div.AuthModal_block-content__3Dk7K > div > div.AuthForm_upper-warepper__r7h_t > section:nth-child(3) > div > a:nth-child(1)');
 
