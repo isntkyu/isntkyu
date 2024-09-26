@@ -60,9 +60,10 @@ export const getVelogCookie = async (loginType) => {
 
   sleep(30)
   if (!(await page.url()).includes('velog.io')) {
-    console.log('이동 성공')
+    console.log(await page.content())
     sleep(30)
   }
+  console.log('이동 성공')
 
   const cookies = await page.cookies()
 
