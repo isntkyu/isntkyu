@@ -5,7 +5,12 @@ const githubPw = process.env.GITHUB_PW || ''
 
 export const getVelogCookie = async (loginType) => {
   const browser = await puppeteer.launch({
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-dev-shm-usage',
+      '--disable-gpu'
+    ],
     headless: true,
   });
 
