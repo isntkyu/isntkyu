@@ -54,8 +54,15 @@ export const getVelogCookie = async (loginType) => {
   // })
   // const url2 = await page.$eval('body > div > div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 > div > header > div > div.Header_right__IaiY4 > a.Header_notification__cTNS6', el => el.href);
   // await page.goto(url2);
+  function sleep(sec) {
+    return new Promise(resolve => setTimeout(resolve, sec * 1000));
+  }
 
-  await new Promise(resolve => setTimeout(resolve, 50000))
+  sleep(30)
+  if (!(await page.url()).includes('velog.io')) {
+    sleep(30)
+  }
+
   const cookies = await page.cookies()
 
   const cookieString = cookies.map(cookie => {
