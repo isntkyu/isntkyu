@@ -3,7 +3,6 @@ import * as puppeteer from "puppeteer";
 const githubId = process.env.GITHUB_ID || ''
 const githubPw = process.env.GITHUB_PW || ''
 
-console.log(githubId)
 export const getVelogCookie = async (loginType) => {
   const browser = await puppeteer.launch({
     args: [
@@ -56,6 +55,7 @@ export const getVelogCookie = async (loginType) => {
   // const url2 = await page.$eval('body > div > div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 > div > header > div > div.Header_right__IaiY4 > a.Header_notification__cTNS6', el => el.href);
   // await page.goto(url2);
 
+  await new Promise(resolve => setTimeout(resolve, 30000))
   const cookies = await page.cookies()
 
   const cookieString = cookies.map(cookie => {
