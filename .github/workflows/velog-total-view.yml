@@ -26,6 +26,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Upload Puppeteer screenshot as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: puppeteer-screenshots
+          path: screenshots/  # 스크린샷이 저장된 폴더
+
       - name: Run update script
         env:
             GITHUB_ID: ${{ secrets.GH_ID }}

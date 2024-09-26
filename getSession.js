@@ -8,8 +8,10 @@ export const getVelogCookie = async (loginType) => {
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
-      '--disable-dev-shm-usage',
-      '--disable-gpu'
+      '--disable-dev-shm-usage',  // 공유 메모리 사용을 비활성화
+      '--disable-accelerated-2d-canvas',
+      '--disable-gpu',
+      '--window-size=1920,1080',  // 해상도 설정
     ],
     headless: true,
   });
@@ -32,17 +34,6 @@ export const getVelogCookie = async (loginType) => {
   })
   const url = await page.$eval('body > div > div.Modal_backdrop__JxQ1v.keyframes_fadeIn__9Emp7 > div > div.AuthModal_white-block__SuoSm > div.AuthModal_block-content__3Dk7K > div > div.AuthForm_upper-warepper__r7h_t > section:nth-child(3) > div > a:nth-child(1)', el => el.href);
   await page.goto(url);
-  // await page.click('body > div > div.Modal_backdrop__JxQ1v.keyframes_fadeIn__9Emp7 > div > div.AuthModal_white-block__SuoSm > div.AuthModal_block-content__3Dk7K > div > div.AuthForm_upper-warepper__r7h_t > section:nth-child(3) > div > a:nth-child(1)',{
-  //   force: true
-  // });
-
-  // await page.wait
-  // await page.evaluate(() => document.querySelector(".svgPath").click())
-  // await page.click("body > div > div.Modal_backdrop__JxQ1v.keyframes_fadeIn__9Emp7 > div > div.AuthModal_white-block__SuoSm > div.AuthModal_block-content__3Dk7K > div > div.AuthForm_upper-warepper__r7h_t > section:nth-child(3) > div > a:nth-child(1) > svg")
-  //   .catch(async err => {
-  //     console.error(err)
-  //     console.log(await page.content())
-  //   });
 
   await page.waitForSelector("#login_field",{
     timeout: 100000,
@@ -57,8 +48,10 @@ export const getVelogCookie = async (loginType) => {
     waitUntil: 'load'
   });
 
+  await page.screenshot({ path: 'screenshots/screenshot.png' });
+
   await page.waitForSelector('body > div > div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 > div > header > div > div.Header_right__IaiY4 > a.Header_notification__cTNS6',{
-    timeout: 300000,
+    timeout: 100000,
     visible: true
   })
   const url2 = await page.$eval('body > div > div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 > div > header > div > div.Header_right__IaiY4 > a.Header_notification__cTNS6', el => el.href);
