@@ -48,8 +48,6 @@ export const getVelogCookie = async (loginType) => {
     waitUntil: 'load'
   });
 
-  await page.screenshot({ path: 'screenshots/screenshot.png' });
-
   await page.waitForSelector('body > div > div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 > div > header > div > div.Header_right__IaiY4 > a.Header_notification__cTNS6',{
     timeout: 100000,
     visible: true
