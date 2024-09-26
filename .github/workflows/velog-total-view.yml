@@ -26,6 +26,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Set GitHub Token
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Use Token for GitHub API
+        run: |
+          curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/user
+
       - name: Run update script
         env:
             GITHUB_ID: ${{ secrets.GH_ID }}
