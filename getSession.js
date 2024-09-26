@@ -3,6 +3,7 @@ import * as puppeteer from "puppeteer";
 const githubId = process.env.GITHUB_ID || ''
 const githubPw = process.env.GITHUB_PW || ''
 
+console.log(githubId)
 export const getVelogCookie = async (loginType) => {
   const browser = await puppeteer.launch({
     args: [
