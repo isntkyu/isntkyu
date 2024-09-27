@@ -67,7 +67,7 @@ export const getVelogCookie = async (loginType) => {
     return new Promise(resolve => setTimeout(resolve, sec * 1000));
   }
 
-  sleep(30)
+  await sleep(30)
 
   if (!(await page.url()).includes('velog.io')) {
     console.log(await page.content())
