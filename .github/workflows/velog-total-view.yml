@@ -16,7 +16,6 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-#          sudo apt-get install -y xvfb
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -31,6 +30,7 @@ jobs:
             GITHUB_ID: ${{ secrets.GH_ID }}
             GITHUB_PW: ${{ secrets.GH_PW }}
             GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+            TOTP_SECRET: ${{ secrets.TOTP_SECRET }}
         run: node update-velog-total.js
 
       - name: Commit and push changes

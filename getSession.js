@@ -1,7 +1,9 @@
 import * as puppeteer from "puppeteer";
+import * as speakeasy from 'speakeasy'
 
 const githubId = process.env.GITHUB_ID || ''
 const githubPw = process.env.GITHUB_PW || ''
+const totpSecret = process.env.TOTP_SECRET || ''
 
 export const getVelogCookie = async (loginType) => {
   const browser = await puppeteer.launch({
@@ -42,28 +44,31 @@ export const getVelogCookie = async (loginType) => {
   await page.type("#login_field", githubId);
   await page.type("#password", githubPw);
   await page.click("input[type='submit']");
+  //
+  await page.waitForNavigation({
+    timeout: 100000,
+    waitUntil: 'load'
+  });
 
-  // await page.waitForNavigation({
-  //   timeout: 100000,
-  //   waitUntil: 'load'
-  // });
+  const token = speakeasy.totp({
+    secret: totpSecret,
+    encoding: 'base32'
+  })
+  await page.type('#app_totp', token)
+  await page.click("input[type='submit']")
 
-  // await page.waitForSelector('body > div > div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 > div > header > div > div.Header_right__IaiY4 > a.Header_notification__cTNS6',{
-  //   timeout: 100000,
-  //   visible: true
-  // })
-  // const url2 = await page.$eval('body > div > div.HomeLayout_block__ZqnqH > div.responsive_mainResponsive___uG64 > div > header > div > div.Header_right__IaiY4 > a.Header_notification__cTNS6', el => el.href);
-  // await page.goto(url2);
   function sleep(sec) {
     return new Promise(resolve => setTimeout(resolve, sec * 1000));
   }
 
   sleep(30)
+
   if (!(await page.url()).includes('velog.io')) {
     console.log(await page.content())
     sleep(30)
   }
   console.log('이동 성공')
+
 
   const cookies = await page.cookies()
 
