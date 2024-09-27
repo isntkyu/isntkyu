@@ -55,12 +55,12 @@ export const getVelogCookie = async (loginType) => {
     encoding: 'base32'
   })
 
+  console.log('여기까지 성공')
   await page.type('#app_totp', token)
   // await page.click("button[type='submit']")
-  console.log(await page.content())
 
-  await page.waitForNavigation({ waitUntil: 'networkidle2' });
-  console.log('여기까지 성공')
+  console.log(await page.content())
+  // await page.waitForNavigation({ waitUntil: 'networkidle2' });
   function sleep(sec) {
     return new Promise(resolve => setTimeout(resolve, sec * 1000));
   }
