@@ -7,7 +7,7 @@ const __dirname = path.resolve();
 
 const readmePath = path.join(__dirname, "README.md");
 
-// const updateVelogTotal = fs.readFileSync(readmePath, "utf8");
+const updateVelogTotal = fs.readFileSync(readmePath, "utf8");
 
 const cookies = await getVelogCookie('github')
 
@@ -15,7 +15,7 @@ const totalView = await getTotalView(cookies)
 
 console.log(totalView)
 
-console.log(readmePath)
+console.log(updateVelogTotal)
 
 fs.appendFileSync(readmePath, `${totalView.getStats.total}`, (err) => {
   if (err) {
