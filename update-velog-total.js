@@ -23,4 +23,6 @@ fs.appendFileSync(readmePath, `${totalView.getStats.total}`, (err) => {
   }
 });
 
+console.log(fs.readFileSync(readmePath, "utf8"))
+
 process.exit()
