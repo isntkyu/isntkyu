@@ -56,7 +56,7 @@ export const getVelogCookie = async (loginType) => {
   })
 
   await page.type('#app_totp', token)
-  await page.click("button[type='submit']")
+  // await page.click("button[type='submit']")
   console.log(await page.content())
 
   await page.waitForNavigation({ waitUntil: 'networkidle2' });
