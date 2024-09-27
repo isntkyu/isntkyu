@@ -7,7 +7,7 @@ const __dirname = path.resolve();
 
 const readmePath = path.join(__dirname, "README.md");
 
-const updateVelogTotal = fs.readFileSync(readmePath, "utf8");
+// const updateVelogTotal = fs.readFileSync(readmePath, "utf8");
 
 const cookies = await getVelogCookie('github')
 
