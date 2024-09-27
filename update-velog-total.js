@@ -22,3 +22,5 @@ fs.appendFileSync(readmePath, `${totalView.getStats.total}`, (err) => {
     console.error(err);
   }
 });
+
+process.exit()
