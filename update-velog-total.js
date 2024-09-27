@@ -15,6 +15,8 @@ const totalView = await getTotalView(cookies)
 
 console.log(totalView)
 
+console.log(readmePath)
+
 fs.appendFileSync(readmePath, `${totalView.getStats.total}`, (err) => {
   if (err) {
     console.error(err);
