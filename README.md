@@ -27,3 +27,7 @@
 
 <!-- [![yourrepositoryname](https://github-readme-stats.vercel.app/api/pin/?username=isntkyu&repo=velog-total)](https://github.com/isntkyu/velog-total) -->
 
+
+---
+## VelogTotalViews: 15,472 (updated_at: Fri Oct 04 2024 08:24:41 GMT+0000 (Coordinated Universal Time)) 
+ --- 
