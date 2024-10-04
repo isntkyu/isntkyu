@@ -16,7 +16,7 @@ const totalView = await getTotalView(cookies)
 const totalViewsStr = totalView.toLocaleString()
 const now = new Date()
 
-const velogData = '## VelogTotalViews: ' + totalViewsStr + ` (updated_at: ${now.toString()}) \n --- \n`
+const velogData = '\n---\n## VelogTotalViews: ' + totalViewsStr + ` (updated_at: ${now.toString()}) \n --- \n`
 
 fs.appendFileSync(readmePath, velogData, (err) => {
   if (err) {
