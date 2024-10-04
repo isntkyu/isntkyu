@@ -50,7 +50,6 @@ export const getVelogCookie = async (loginType) => {
     waitUntil: 'load'
   });
 
-  await sleep(30)
   const token = speakeasy.totp({
     secret: totpSecret,
     encoding: 'base32'
@@ -69,8 +68,8 @@ export const getVelogCookie = async (loginType) => {
   }
 
 
+  await sleep(30)
   if (!(await page.url()).includes('velog.io')) {
-    // console.log(await page.content())
     sleep(30)
   }
   console.log('이동 성공')
