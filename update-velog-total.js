@@ -13,16 +13,15 @@ const cookies = await getVelogCookie('github')
 
 const totalView = await getTotalView(cookies)
 
-console.log(totalView)
+const totalViewsStr = totalView.toLocaleString()
+const now = new Date()
 
-console.log(updateVelogTotal)
+const velogData = '## VelogTotalViews: ' + totalViewsStr + ` (updated_at: ${now.toString()}) \n --- \n`
 
-fs.appendFileSync(readmePath, `${totalView.getStats.total}`, (err) => {
+fs.appendFileSync(readmePath, velogData, (err) => {
   if (err) {
     console.error(err);
   }
 });
-
-console.log(fs.readFileSync(readmePath, "utf8"))
 
 process.exit()

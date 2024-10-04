@@ -27,13 +27,3 @@
 
 <!-- [![yourrepositoryname](https://github-readme-stats.vercel.app/api/pin/?username=isntkyu&repo=velog-total)](https://github.com/isntkyu/velog-total) -->
 
----
-
-github action test
-
-github action test
-
-github action test
-
-github action test
-146514661468
