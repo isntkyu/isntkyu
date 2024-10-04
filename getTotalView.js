@@ -4,19 +4,19 @@ const endpoint = 'https://v2cdn.velog.io/graphql'
 const newEndpoint = 'https://v3.velog.io'
 
 export const getTotalView = async (cookie) => {
-  const newClient = got.extend({
-    prefixUrl: newEndpoint,
-    headers: {
-      'Cookie': cookie
-    }
-  })
+  // const newClient = got.extend({
+  //   prefixUrl: newEndpoint,
+  //   headers: {
+  //     'Cookie': cookie
+  //   }
+  // })
   const oldClient = got.extend({
     prefixUrl: endpoint,
     headers: {
       'Cookie': cookie
     }
   })
-  const userTags = await newClient.post('graphql', {
+  const userTags = await got.post(newEndpoint + '/graphql', {
     json: {
       "query": "\n    query velogPosts($input: GetPostsInput!) {\n  posts(input: $input) {\n    id\n    title\n    short_description\n    thumbnail\n    user {\n      id\n      username\n      profile {\n        id\n        thumbnail\n        display_name\n      }\n    }\n    url_slug\n    released_at\n    updated_at\n    comments_count\n    tags\n    is_private\n    likes\n  }\n}\n    ",
       "variables": {
