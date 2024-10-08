@@ -2,6 +2,7 @@ import * as fs from "fs";
 import path from "path";
 import {getVelogCookie} from "./getSession.js";
 import {getTotalView} from "./getTotalView.js";
+import dayjs from "dayjs";
 
 const __dirname = path.resolve();
 
@@ -14,11 +15,15 @@ const cookies = await getVelogCookie('github')
 const totalView = await getTotalView(cookies)
 
 const totalViewsStr = totalView.toLocaleString()
-const now = new Date()
+const now = dayjs().format('YYYY-MM-DD')
 
-const velogData = '\n---\n### VelogTotalViews: ' + totalViewsStr + `\n(updated_at: ${now.toString()}) \n--- \n`
+// const velogData = '### Velog Total Views: '
+const dynamicData = totalViewsStr + ` (updated ${now})\n`
 
-fs.appendFileSync(readmePath, velogData, (err) => {
+const updatedData = updateVelogTotal.replace(/(### Velog Total Views:).*/, `$1 ${dynamicData}`);
+
+
+fs.writeFileSync(readmePath, updatedData, (err) => {
   if (err) {
     console.error(err);
   }

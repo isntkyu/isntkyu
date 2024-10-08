@@ -5,6 +5,8 @@
 <br />
 
 ---
+### Velog Total Views: 15,516(updated 2024-10-08)
+
 
 ### Latest Blog Posts
 
@@ -26,33 +28,3 @@
 ---
 
 <!-- [![yourrepositoryname](https://github-readme-stats.vercel.app/api/pin/?username=isntkyu&repo=velog-total)](https://github.com/isntkyu/velog-total) -->
-
-
----
-## VelogTotalViews: 15,472 (updated_at: Fri Oct 04 2024 08:24:41 GMT+0000 (Coordinated Universal Time)) 
- --- 
-
----
-### VelogTotalViews: 15,474
-(updated_at: Fri Oct 04 2024 09:11:17 GMT+0000 (Coordinated Universal Time)) 
---- 
-
----
-### VelogTotalViews: 15,477
-(updated_at: Sat Oct 05 2024 00:51:36 GMT+0000 (Coordinated Universal Time)) 
---- 
-
----
-### VelogTotalViews: 15,482
-(updated_at: Sun Oct 06 2024 00:59:16 GMT+0000 (Coordinated Universal Time)) 
---- 
-
----
-### VelogTotalViews: 15,489
-(updated_at: Mon Oct 07 2024 00:53:52 GMT+0000 (Coordinated Universal Time)) 
---- 
-
----
-### VelogTotalViews: 15,509
-(updated_at: Tue Oct 08 2024 00:51:54 GMT+0000 (Coordinated Universal Time)) 
---- 

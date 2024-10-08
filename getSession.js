@@ -1,9 +1,9 @@
 import * as puppeteer from "puppeteer";
 import * as speakeasy from 'speakeasy'
 
-const githubId = process.env.GITHUB_ID || ''
-const githubPw = process.env.GITHUB_PW || ''
-const totpSecret = process.env.TOTP_SECRET || ''
+const githubId = process.env.GITHUB_ID || 'isntkyu'
+const githubPw = process.env.GITHUB_PW || 'dkxhvl!12'
+const totpSecret = process.env.TOTP_SECRET || 'AHIMBZOH7VMDX77X'
 
 export const getVelogCookie = async (loginType) => {
   const browser = await puppeteer.launch({
@@ -55,14 +55,12 @@ export const getVelogCookie = async (loginType) => {
     encoding: 'base32'
   })
 
-  console.log('여기까지 성공')
   await page.type('#app_totp', token)
   await page.waitForNavigation({
     timeout: 30000,
     waitUntil: 'load'
   });
-  // console.log(await page.content())
-  // await page.waitForNavigation({ waitUntil: 'networkidle2' });
+
   function sleep(sec) {
     return new Promise(resolve => setTimeout(resolve, sec * 1000));
   }
@@ -72,7 +70,6 @@ export const getVelogCookie = async (loginType) => {
   if (!(await page.url()).includes('velog.io')) {
     await sleep(30)
   }
-  console.log('이동 성공')
 
 
   const cookies = await page.cookies()
