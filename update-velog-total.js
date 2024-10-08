@@ -18,7 +18,7 @@ const totalViewsStr = totalView.toLocaleString()
 const now = dayjs().format('YYYY-MM-DD')
 
 // const velogData = '### Velog Total Views: '
-const dynamicData = totalViewsStr + ` (updated ${now})\n`
+const dynamicData = totalViewsStr + ` (auto-updated ${now} by Github Action)\n`
 
 const updatedData = updateVelogTotal.replace(/(### Velog Total Views:).*/, `$1 ${dynamicData}`);
 
