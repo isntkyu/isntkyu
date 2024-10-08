@@ -5,8 +5,9 @@
 <br />
 
 ---
-### Velog Total Views: 15,516(updated 2024-10-08)
+### Velog Total Views: 15,516 (updated 2024-10-08)
 
+---
 
 ### Latest Blog Posts
 
