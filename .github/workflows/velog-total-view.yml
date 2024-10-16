@@ -27,11 +27,10 @@ jobs:
 
       - name: Run update script
         env:
-            GITHUB_ID: ${{ secrets.GH_ID }}
-            GITHUB_PW: ${{ secrets.GH_PW }}
-            GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-            TOTP_SECRET: ${{ secrets.TOTP_SECRET }}
-        run: node update-velog-total.js
+          GITHUB_ID: ${{ secrets.GH_ID }}
+          GITHUB_PW: ${{ secrets.GH_PW }}
+          TOTP_SECRET: ${{ secrets.TOTP_SECRET }}
+        run: node app.js
 
       - name: Commit and push changes
         run: |
