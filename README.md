@@ -2,7 +2,6 @@
 <img src="https://img.shields.io/badge/Nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white">
 
 <br />
-<br />
 
 ---
 ### Velog Total Views: 15,633 (auto-updated 2024-10-17 by Github Action)
