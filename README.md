@@ -105,9 +105,9 @@
 ➡️ [more blog posts...](https://velog.io/@isntkyu)
 
 ---
-
+<!--
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=isntkyu&layout=compact)](https://github.com/isntkyu)
 
 ---
-
+-->
 <!-- [![yourrepositoryname](https://github-readme-stats.vercel.app/api/pin/?username=isntkyu&repo=velog-total)](https://github.com/isntkyu/velog-total) -->
