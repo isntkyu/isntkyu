@@ -1,0 +1,42 @@
+name: Update README daily
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # 매일 자정에 실행
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "16"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run update script
+        env:
+          GITHUB_ID: ${{ secrets.GH_ID }}
+          GITHUB_PW: ${{ secrets.GH_PW }}
+          TOTP_SECRET: ${{ secrets.TOTP_SECRET }}
+        run: node app.js
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git pull
+          git add README.md
+          git commit -m "TEST: Automated update of README"
+          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/isntkyu/isntkyu.git
