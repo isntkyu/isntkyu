@@ -39,4 +39,4 @@ jobs:
           git pull --no-rebase
           git add README.md
           git commit -m "Automated update of README"
-          git push origin main -f https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/isntkyu/isntkyu.git
+          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/isntkyu/isntkyu.git
