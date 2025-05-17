@@ -36,7 +36,7 @@ jobs:
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
-          git pull
+          git pull --no-rebase
           git add README.md
           git commit -m "TEST: Automated update of README"
           git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/isntkyu/isntkyu.git
