@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import path from "path";
-import { getVelogCookie } from "./getSession.js";
+import { getVelogCookie } from "./getVelogCookie.js";
 import { getTotalView } from "./getTotalView.js";
 import dayjs from "dayjs";
 
