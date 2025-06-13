@@ -4,7 +4,7 @@
 <br />
 
 ---
-### Velog Total Views: 17,331 (auto-updated 2025-06-12 by Github Action)
+### Velog Total Views: 17,344 (auto-updated 2025-06-13 by Github Action)
 
 ---
 
