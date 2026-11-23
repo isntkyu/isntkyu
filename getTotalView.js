@@ -2,7 +2,7 @@ import got from 'got'
 
 const CONFIG = {
   ENDPOINTS: {
-    V2: 'https://v2cdn.velog.io/graphql',
+    V2: 'https://v2.velog.io/graphql',
     V3: 'https://v3.velog.io/graphql'
   },
   QUERIES: {
