@@ -2,7 +2,7 @@ import got from 'got'
 
 const CONFIG = {
   ENDPOINTS: {
-    V2: 'https://v2.velog.io/graphql',
+    V2: 'https://v2.velog.io',
     V3: 'https://v3.velog.io/graphql'
   },
   QUERIES: {
@@ -73,7 +73,8 @@ const fetchUserPosts = async (username, cookie) => {
 };
 
 const fetchPostStats = async (client, postId) => {
-  const response = await client.post('', {
+  // 경로를 ''로 두면 /graphql/ 처럼 끝 슬래시가 붙어 v2.velog.io가 404를 반환한다
+  const response = await client.post('graphql', {
     json: {
       operationName: "GetStats",
       variables: {
